@@ -124,7 +124,7 @@
 @inline-color-3: @background;
 
 /* Selection colors */
-@selection-color-focused: #585858;
+@selection-color-focused: rgba(0, 121, 160, 0.31);
 @selection-color-unfocused: #424242;
 
 @activeline-bgcolor: rgba(96, 96, 96, 0.5);
@@ -146,4 +146,8 @@
 
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
     color: @comment;
+}
+
+.CodeMirror-selected {
+    background: rgba(173, 107, 107, 0.39);
 }
