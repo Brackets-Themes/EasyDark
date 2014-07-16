@@ -5,7 +5,7 @@
     "version": "0.0.1",
     "author": "Miguel Castillo <mahchagnu@gmail.com>",
     "engines": {
-        "brackets": ">=0.41.0"
+        "brackets": ">=0.42.0"
     },
     "theme": "main.less",
     "screenshot": "screenshot.png"
