@@ -81,6 +81,15 @@
     background-color: @selection-color-focused;
 }
 
+.CodeMirror-nonmatchingbracket {
+    background-color: fadeout(@red, 20%);
+    color: lighten(@white, 10%);
+}
+
+.CodeMirror-focused .CodeMirror-nonmatchingbracket {
+    background-color: @red;
+}
+
 .CodeMirror-matchingbracket {
     background-color: fadeout(@matching-bracket, 10%);
     color: lighten(@white, 10%) !important;
