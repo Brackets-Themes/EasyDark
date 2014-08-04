@@ -99,6 +99,16 @@
     background: @activeline-bgcolor !important;
 }
 
-.CodeMirror-cursor {
+.CodeMirror-matchingtag {
+    background: @matching-bracket;
+}
+
+.CodeMirror .CodeMirror-cursor {
     border-left: 1px solid @foreground !important;
+}
+
+.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid @foreground;
+    width: 1.2ex;
 }
