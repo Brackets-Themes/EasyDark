@@ -112,3 +112,128 @@
     border-bottom: 1px solid @foreground;
     width: 1.2ex;
 }
+/**
+ * Theme EasyDark Copyright (c) 2014 Miguel Castillo.
+ *
+ * Licensed under MIT
+ *
+ * Rendition of https://github.com/chriskempson/tomorrow-theme
+ */
+
+
+/* Overall Colors */
+@background: #1d1f21;
+@current-line: #282a2e;
+@foreground: #c5c8c6;
+@comment: #969896;
+@orange: #de935f;
+@blue: #81a2be;
+@purple: #b294bb;
+@green: #b5bd68;
+@red: #cc6666;
+@aqua: #8abeb7;
+@yellow: #f0c674;
+
+/* Selection colors */
+@selection-color-focused: rgba(0, 121, 160, 0.31);
+@selection-color-unfocused: #424242;
+
+@activeline-bgcolor: rgba(96, 96, 96, 0.5);
+@activeline-number-bgcolor: rgba(96, 96, 96, 0.5);
+@matching-bracket: rgba(189, 100, 100, 0.8);
+
+.CodeMirror .cm-keyword { color: @purple; }
+.CodeMirror .cm-atom { color: @orange; }
+.CodeMirror .cm-number { color: @green; }
+.CodeMirror .cm-def { color: @foreground; }
+.CodeMirror .cm-variable { color: @orange; }
+.CodeMirror .cm-variable-2 { color: @blue; }
+.CodeMirror .cm-variable-3 { color: @yellow; }
+.CodeMirror .cm-property { color: @yellow; }
+.CodeMirror .cm-operator { color: @foreground; }
+.CodeMirror .cm-comment { color: @comment; }
+.CodeMirror .cm-string { color: @green; }
+.CodeMirror .cm-string-2 { color: @aqua; }
+.CodeMirror .cm-meta { color: @red; }
+.CodeMirror .cm-error { color: @red; }
+.CodeMirror .cm-qualifier { color: @blue; }
+.CodeMirror .cm-builtin { color: @yellow; }
+.CodeMirror .cm-bracket { color: @foreground; }
+.CodeMirror .cm-tag { color: @blue; }
+.CodeMirror .cm-attribute { color: @orange; }
+.CodeMirror .cm-header { color: @purple; }
+.CodeMirror .cm-quote { color: @blue; }
+.CodeMirror .cm-hr { color: @orange; }
+.CodeMirror .cm-link { color: @yellow; }
+.CodeMirror .cm-rangeinfo { color: @aqua; }
+.CodeMirror .cm-minus { color: @red; }
+.CodeMirror .cm-plus { color: @green; }
+
+.CodeMirror,
+.CodeMirror .CodeMirror-scroll {
+    background-color: @background;
+    color: @foreground;
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: @selection-color-unfocused;
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: @selection-color-focused;
+}
+
+.CodeMirror .CodeMirror-gutters {
+    background-color: @background;
+    border-right: 1px solid #696969;
+}
+
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+    color: @foreground !important;
+}
+
+.CodeMirror-gutter-elt {
+    color: @comment !important;
+}
+
+.CodeMirror-selected {
+    background: rgba(173, 107, 107, 0.39);
+}
+
+.CodeMirror .CodeMirror-matchingbracket {
+    color: @foreground !important;
+    background-color: @matching-bracket;
+}
+
+.CodeMirror .CodeMirror-linenumber {
+    color: @activeline-number-bgcolor;
+}
+
+.CodeMirror-activeline-background,
+.CodeMirror-activeline .CodeMirror-gutter-elt {
+    background: @activeline-bgcolor !important;
+}
+
+.CodeMirror-matchingtag {
+    background: @matching-bracket;
+}
+
+.CodeMirror .CodeMirror-cursor {
+    border-left: 1px solid @foreground !important;
+}
+
+.CodeMirror .CodeMirror-overwrite .CodeMirror-cursor {
+    border-left: none !important;
+    border-bottom: 1px solid @foreground;
+    width: 1.2ex;
+}
+
+/* Non-editor styling */
+
+#image-holder,
+#not-editor {
+    background-color: @background;
+}
+
+#image-holder {
+    color: @foreground;
+}
